@@ -1,0 +1,42 @@
+.weather-block {
+  background: rgba(255, 255, 255, .3);
+  padding: 1em 1em .5em;
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__temp {
+    flex: 3;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: .5em;
+  }
+  &__info {
+    flex: 7;
+    text-align: left;
+    padding-left: 1em;
+  }
+  &__link-wrapper {
+    text-align: right;
+    a {
+      font-size: .8em;
+    }
+  }
+  
+  @media all and (min-width: 600px) {
+    max-width: none;
+    &__wrapper {
+      flex-direction: row;
+    }
+    &__temp {
+      margin-top: .5em;
+    }
+  }
+}

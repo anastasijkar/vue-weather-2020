@@ -1,0 +1,58 @@
+@import './_reset';
+
+body {
+  min-height: 100vh;
+  min-width: 100vw;
+  padding: 1.5em;
+  background-color: #889faf;
+  background-image: url('./assets/bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  font-size: 18px;
+  box-sizing: border-box;
+}
+
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  section {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-weight: bold;
+    font-size: 2em;
+    margin: .5em 0 .3em;
+  }
+
+  strong {
+    font-weight: bold;
+  }
+
+  div, p, span {
+    line-height: 1.3em;
+  }
+
+  button, a {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  a {
+    text-decoration: none;
+    &:hover, :active {
+      text-decoration: underline;
+    }
+  }
+}

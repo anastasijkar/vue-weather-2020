@@ -1,0 +1,45 @@
+.home {
+  &__input-wrapper {
+    margin: .5em 0;
+    input {
+      background: rgba(255, 255, 255, .3);
+      border-radius: 0;
+      border: 1px solid #fff;
+      box-shadow: none;
+      padding: .5em;
+      margin-bottom: .5em;
+      color: #fff;
+      font-weight: bold;
+    }
+    button {
+      border-radius: 0;
+      background: rgba(255, 255, 255, .4);
+      border: none;
+      box-shadow: none;
+      transition: background .25s ease;
+      padding: .55em;
+      &:hover, &:active {
+        background: rgba(255, 255, 255, .5);
+      }
+    }
+    input, button {
+      width: 100%;
+      max-width: 350px;
+    }
+  }
+
+  @media all and (min-width: 600px) {
+    &__input-wrapper {
+      input, button {
+        max-width: none;
+      }
+      input {
+        width: calc(70% - .5em);
+        margin-right: .5em;
+      }
+      button {
+        width: 30%;
+      }
+    }
+  }
+}
