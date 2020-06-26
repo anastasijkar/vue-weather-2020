@@ -35,6 +35,7 @@ export default {
   name: 'Home',
   mounted () {
     if (!this.isSuccess) this.getWeatherByLocation()
+    document.title = 'AirApp'
   },
   data () {
     return {

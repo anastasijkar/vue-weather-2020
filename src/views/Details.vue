@@ -52,6 +52,7 @@ export default {
         }
       })
     }
+    document.title = `${this.location} hourly weather`
   },
   computed: {
     errorMessage () {
